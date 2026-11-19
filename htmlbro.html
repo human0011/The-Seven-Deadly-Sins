@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050008">
+    <title>The Seven Deadly Sins</title>
+    <link rel="stylesheet" href="stylebro.css">
+</head>
+<body>
+
+    <div id="particles"></div>
+
+    <!-- INTRO -->
+    <section id="intro" class="intro-screen">
+        <div class="intro-rune">✦</div>
+        <p class="intro-small">AN ANCIENT PROPHECY AWAKENS</p>
+        <h1>THE SEVEN<br><span>DEADLY SINS</span></h1>
+        <p class="intro-subtitle">SEVEN SOULS. SEVEN CURSES. ONE WORLD.</p>
+        <button id="startButton" class="start-button">
+            AWAKEN THE SEVEN
+        </button>
+        <div class="intro-bottom">ENTER AT YOUR OWN RISK</div>
+    </section>
+
+    <!-- HOME -->
+    <main id="home" class="view home-view" hidden>
+
+        <header class="heading">
+            <p>THE SEVEN GATES OF HUMAN CORRUPTION</p>
+            <h1>CHOOSE YOUR DESTINY</h1>
+            <span class="heading-line"></span>
+        </header>
+
+        <section class="sin-wheel">
+            <div class="outer-ring"></div>
+            <div class="inner-ring"></div>
+
+            <div class="center-title">
+                <img src="title.png" alt="Seven Deadly Sins">
+            </div>
+
+            <div id="orbit" class="orbit"></div>
+        </section>
+
+        <footer class="home-footer">
+            <span>SEVEN SOULS</span>
+            <span>✦</span>
+            <span>SEVEN SINS</span>
+            <span>✦</span>
+            <span>ONE DESTINY</span>
+        </footer>
+
+    </main>
+
+    <!-- SIN DETAIL -->
+    <main id="sinPage" class="view detail-view" hidden>
+
+        <div class="detail-background"></div>
+
+        <div class="top-label">THE FORBIDDEN GRIMOIRE</div>
+
+        <button id="backButton" class="back-button">
+            ← RETURN HOME
+        </button>
+
+        <div class="detail-layout">
+
+            <div class="detail-art">
+                <div class="art-ring"></div>
+                <div class="art-ring second-ring"></div>
+                <div class="art-ring third-ring"></div>
+
+                <div class="art-number" id="artNumber">01</div>
+
+                <img id="detailImage" src="" alt="">
+            </div>
+
+            <div class="detail-info">
+
+                <p class="detail-kicker">THE SEVEN DEADLY SINS</p>
+
+                <h2 id="sinTitle"></h2>
+
+                <p id="sinLatin" class="latin"></p>
+
+                <div class="owner-line">
+                    <span>✦</span>
+                    <p id="sinOwner"></p>
+                </div>
+
+                <div class="detail-divider"></div>
+
+                <h3 class="about-title">THE NATURE OF SIN</h3>
+
+                <p id="sinDescription" class="description"></p>
+
+                <blockquote id="sinQuote" class="quote"></blockquote>
+
+                <div class="detail-number" id="sinNumber"></div>
+
+                <div class="navigation-buttons">
+                    <button id="prevButton">← PREVIOUS</button>
+                    <button id="nextButton">NEXT →</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="detail-footer">
+            <span>SEVEN DEADLY SINS</span>
+            <span>THE WORLD OF HUMAN CORRUPTION</span>
+        </div>
+
+    </main>
+
+    <script src="jsbro.js"></script>
+    
+
+</body>
+</html>
